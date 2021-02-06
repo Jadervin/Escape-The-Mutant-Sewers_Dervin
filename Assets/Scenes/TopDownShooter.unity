@@ -641,6 +641,7 @@ MonoBehaviour:
   MaxHP: 10
   currentHP: 0
   gameover: 
+  NoHP: 0
   playerMove: {fileID: 296654455}
 --- !u!114 &296654457
 MonoBehaviour:
@@ -655,7 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthToDisplay: {fileID: 296654456}
-  healthbar: {fileID: 0}
+  healthbar: {fileID: 320725141}
 --- !u!1 &320725139
 GameObject:
   m_ObjectHideFlags: 0
