@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
     [HideInInspector]
     public int currentHP;
     public string gameover;
-    public int NoHP;
+    private int NoHP = 0;
 
     public PlayerMovement playerMove;
 
@@ -25,7 +25,7 @@ private void OnTriggerEnter(Collider other)
         {
     
                currentHP = currentHP - 1;
-                Destroy(other.gameObject);
+                
             if (currentHP == NoHP)
             {
                 SceneManager.LoadScene(gameover);
@@ -34,12 +34,7 @@ private void OnTriggerEnter(Collider other)
         }
       
             
-        if (other.gameObject.tag == "Spike")
-        {
-            currentHP = currentHP - 10;
-            
-            SceneManager.LoadScene(gameover);
-        }
+        
     }
 
     

@@ -7,7 +7,7 @@ public class HealthUI : MonoBehaviour
 {
 
     public Health healthToDisplay;
-    public Text healthDisplay;
+    //public Text healthDisplay;
     public Slider healthbar;
 
 
@@ -19,7 +19,7 @@ public class HealthUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthDisplay.text = healthToDisplay.currentHP.ToString();
+        //healthDisplay.text = healthToDisplay.currentHP.ToString();
 
         healthbar.value = healthToDisplay.currentHP;
     }
