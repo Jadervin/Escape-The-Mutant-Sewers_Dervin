@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     public GameObject Player;
     public Rigidbody rb;
-    //public bool PlayerGround = true;
+   
     public string movementAxis = "Horizontal";
     //public string youwin;
 
@@ -34,13 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         Player.transform.Translate(new Vector2(axis * Speed * Time.deltaTime, 0));
 
-       /* if(Input.GetButtonDown("Jump") && PlayerGround)
-        {
-
-            rb.AddForce(new Vector3(0, 10, 0), ForceMode.Impulse);
-            PlayerGround = false;
-        }
-       */
+       
     }
     private void OnCollisionEnter(Collision collision)
     {
