@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 21fd685eb57fe5a458fdeb88791b4707
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 437fe9141bca7cd4a96418482ae03446
+  - enabled: 1
+    path: Assets/Scenes/TopDownShooter.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/You Win.unity
+    guid: f6c94f6bd687b82488b7b15c2034cfaf
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 5ffdce50c2cb2b44da95c4273eebc567
   m_configObjects: {}
