@@ -254,6 +254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSceneName: TopDownShooter
+  Menu: Main Menu
+  Credits: Credits
 --- !u!4 &796911837
 Transform:
   m_ObjectHideFlags: 0
@@ -687,7 +689,7 @@ GameObject:
   - component: {fileID: 1865288590}
   - component: {fileID: 1865288589}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,7 +759,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 796911836}
         m_TargetAssemblyTypeName: MainMenuScript, Assembly-CSharp
-        m_MethodName: StartPressed
+        m_MethodName: MenuPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

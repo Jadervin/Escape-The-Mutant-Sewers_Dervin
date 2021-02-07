@@ -7,7 +7,8 @@ public class MainMenuScript : MonoBehaviour
 {
 
     public string startSceneName;
-
+    public string Menu;
+    public string Credits;
 
     public void StartPressed()
     {
@@ -16,7 +17,20 @@ public class MainMenuScript : MonoBehaviour
     
     
     }
+    public void MenuPressed()
+    {
+        SceneManager.LoadScene(Menu);
 
+
+
+    }
+    public void CreditsPressed()
+    {
+        SceneManager.LoadScene(Credits);
+
+
+
+    }
     public void CloseGame()
     {
         Application.Quit();
