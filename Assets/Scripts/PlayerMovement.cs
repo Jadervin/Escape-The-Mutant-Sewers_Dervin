@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
    
     public string movementAxis = "Horizontal";
+    public string movementAxis2 = "Vertical";
+
     //public string youwin;
 
 
@@ -32,9 +34,12 @@ public class PlayerMovement : MonoBehaviour
     {
         float axis = Input.GetAxis(movementAxis);
 
-        Player.transform.Translate(new Vector2(axis * Speed * Time.deltaTime, 0));
+        Player.transform.Translate(new Vector3(axis * Speed * Time.deltaTime, 0, 0));
 
-       
+        float axis2 = Input.GetAxis(movementAxis2);
+
+        Player.transform.Translate(new Vector3(0,0, axis2 * Speed * Time.deltaTime));
+
     }
     private void OnCollisionEnter(Collision collision)
     {
