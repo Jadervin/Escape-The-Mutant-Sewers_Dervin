@@ -43,7 +43,10 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-       
+        if (collision.gameObject.tag == "Wall") 
+        {
+            rb.velocity = Vector3.zero;
+        }
 
         /*
 
