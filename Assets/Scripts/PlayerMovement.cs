@@ -13,9 +13,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     public GameObject Player;
     public Rigidbody rb;
-   
-    public string movementAxis = "Horizontal";
-    public string movementAxis2 = "Vertical";
+    public CharacterController controller;
+
+    //public string movementAxis = "Horizontal";
+    //public string movementAxis2 = "Vertical";
 
     //public string youwin;
 
@@ -32,6 +33,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        float movX = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        float movZ = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        float gravity = Physics.gravity.y * Time.deltaTime;
+
+
+        Vector3 movementVector = new Vector3(movX, gravity, movZ);
+
+
+
+        controller.Move(movementVector);
+
+
+        /*
         float axis = Input.GetAxis(movementAxis);
 
         Player.transform.Translate(new Vector3(axis * Speed * Time.deltaTime, 0, 0));
@@ -39,15 +54,16 @@ public class PlayerMovement : MonoBehaviour
         float axis2 = Input.GetAxis(movementAxis2);
 
         Player.transform.Translate(new Vector3(0,0, axis2 * Speed * Time.deltaTime));
-
+        */
     }
     private void OnCollisionEnter(Collision collision)
     {
+        /*
         if (collision.gameObject.tag == "Wall") 
         {
             rb.velocity = Vector3.zero;
         }
-
+        */
         /*
 
         if (collision.gameObject.tag == "Floor")
