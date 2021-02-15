@@ -29,7 +29,7 @@ public class EnemyScript : MonoBehaviour
 
                 RaycastHit hit;
 
-                if(Physics.Raycast(ray, out hit))
+                if(Physics.Raycast(ray, out hit)&&hit.transform.gameObject.tag=="Player")
                 {
 
                      Debug.Log("I see somethinng");

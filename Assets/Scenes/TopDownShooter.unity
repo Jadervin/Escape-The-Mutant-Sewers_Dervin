@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player/ Potential Gun
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79ac49189960cc4419fe0b875e945094, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 79ac49189960cc4419fe0b875e945094, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.6628
@@ -723,6 +727,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 79ac49189960cc4419fe0b875e945094, type: 3}
       propertyPath: m_LocalPosition.z
       value: -131.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 79ac49189960cc4419fe0b875e945094, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79ac49189960cc4419fe0b875e945094, type: 3}
@@ -825,7 +833,7 @@ CharacterController:
   m_StepOffset: 24.02
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -961.6, z: 0}
 --- !u!1 &320725139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,46 +1153,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!195 &746203822
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746203819}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.1
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 0.24
-  m_BaseOffset: 0.093585335
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &746203824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746203819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab8f4e6b9c86aa54d9ebd89d27fc04e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathfinding: {fileID: 746203822}
-  muzzle: {fileID: 0}
-  projectile: {fileID: 0}
-  eyes: {fileID: 4955179438428990056, guid: e7202c3d2f0c8eb43aeeb222adb82e3b, type: 3}
-  visionRange: 7.07
-  pursuing: 0
 --- !u!1 &827322841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1560,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 85.44, y: 5.807, z: -713.384}
+--- !u!1 &967786811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1b67ce0bbafb47498b09ae3e30d9ff2, type: 3}
+  m_PrefabInstance: {fileID: 2115330392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &967786812
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967786811}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.09
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.09
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &967786813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967786811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8f4e6b9c86aa54d9ebd89d27fc04e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathfinding: {fileID: 967786812}
+  muzzle: {fileID: 0}
+  projectile: {fileID: 0}
+  eyes: {fileID: 1598201291}
+  visionRange: 7.07
+  pursuing: 0
 --- !u!1 &978604825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,6 +1741,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1598201291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4955179438428990056, guid: e7202c3d2f0c8eb43aeeb222adb82e3b, type: 3}
+  m_PrefabInstance: {fileID: 1705631465}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1599882710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1745,15 +1763,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076303596982145549, guid: 99e37b0a1a3f9ef4f9342bbb2f42f929, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.250066
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6076303596982145549, guid: 99e37b0a1a3f9ef4f9342bbb2f42f929, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0600052
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 6076303596982145549, guid: 99e37b0a1a3f9ef4f9342bbb2f42f929, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.7000813
+      value: 6.24
       objectReference: {fileID: 0}
     - target: {fileID: 6076303596982145549, guid: 99e37b0a1a3f9ef4f9342bbb2f42f929, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1799,7 +1817,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1667978660}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 6.3292336
+  m_Radius: 5.22
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1808,8 +1826,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 9.152824
-  m_BaseOffset: 4.576412
+  m_Height: 5.35
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1667978662
@@ -1859,15 +1877,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4955179438428990060, guid: e7202c3d2f0c8eb43aeeb222adb82e3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0018899
+      value: -0.0019
       objectReference: {fileID: 0}
     - target: {fileID: 4955179438428990060, guid: e7202c3d2f0c8eb43aeeb222adb82e3b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.07429447
+      value: 0.0743
       objectReference: {fileID: 0}
     - target: {fileID: 4955179438428990060, guid: e7202c3d2f0c8eb43aeeb222adb82e3b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0012181
+      value: -0.0125
       objectReference: {fileID: 0}
     - target: {fileID: 4955179438428990060, guid: e7202c3d2f0c8eb43aeeb222adb82e3b, type: 3}
       propertyPath: m_LocalRotation.w
