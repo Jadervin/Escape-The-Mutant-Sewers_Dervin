@@ -58,22 +58,6 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        /*
-        if (collision.gameObject.tag == "Wall") 
-        {
-            rb.velocity = Vector3.zero;
-        }
-        */
-        /*
-
-        if (collision.gameObject.tag == "Floor")
-        {
-            PlayerGround = true;
-        }
-        if (collision.gameObject.tag == "Win")
-        {
-            SceneManager.LoadScene(youwin);
-        }
-        */
+        
     }
 }

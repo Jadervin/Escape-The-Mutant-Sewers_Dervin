@@ -20,8 +20,8 @@ public class Health : MonoBehaviour
 private void OnTriggerEnter(Collider other)
     {
        
-
-        if (other.gameObject.tag == "Enemy" )
+        
+        if (other.gameObject.tag == "Bullet" )
         {
     
                currentHP = currentHP - 1;
@@ -33,7 +33,7 @@ private void OnTriggerEnter(Collider other)
             }
         }
       
-            
+          
         
     }
 
