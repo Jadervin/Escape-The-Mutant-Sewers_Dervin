@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
-
+    public KeyCode Shoot;
     private Rigidbody rb;
     public GameObject Bullet;
     public Transform Gun;
@@ -24,7 +24,7 @@ public class PlayerShooting : MonoBehaviour
     {
         
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(Shoot))
         {
             if (Time.time > shootRateTimeStamp)
             {
