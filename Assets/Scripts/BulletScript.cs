@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour
     public GameObject Player;
     //public Health healthstat;
     public float expiryTime = 0f;
-
+    public string YouWin;
 
     // Start is called before the first frame update
     void Start()
@@ -32,14 +32,15 @@ public class BulletScript : MonoBehaviour
                 Debug.Log("DESTROYED");
             }
 
-        if (collision.gameObject.tag == "Player")
+
+        if (collision.gameObject.tag == "Boss")
         {
 
-            
+            Destroy(collision.gameObject);
             Destroy(this.gameObject);
-            
+            Debug.Log("DESTROYED");
+            SceneManager.LoadScene(YouWin);
         }
-
     }
     /*
     private void OnTriggerEnter(Collider collide)

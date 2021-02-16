@@ -28,7 +28,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e75182472e38114b8959f5c6b740bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   expiryTime: 15
+  YouWin: You Win
 --- !u!1001 &4169065202145614093
 PrefabInstance:
   m_ObjectHideFlags: 0
