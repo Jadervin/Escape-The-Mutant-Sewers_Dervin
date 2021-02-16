@@ -511,14 +511,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Tetragnatha: by Ilia
-
-    - Ant | Robotic Ant: by Malinga
-
-    - Rat_Boss:
-    by Tanya_Ekberg
-
-'
+  m_Text: "- Tetragnatha: by Ilia\n- Creeppy frog- by DZHUSI \xD8NE\n- Rat_Boss:
+    by Tanya_Ekberg\n"
 --- !u!222 &1282343540
 CanvasRenderer:
   m_ObjectHideFlags: 0
