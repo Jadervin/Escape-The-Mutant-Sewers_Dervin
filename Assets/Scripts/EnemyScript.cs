@@ -27,13 +27,14 @@ public class EnemyScript : MonoBehaviour
     public bool shot;
     public GameObject Bullet;
     public Transform Gun;
+
     public float shootrate = 0f;
     public float shootForce = 0f;
     private float shootRateTimeStamp = 0f;
 
 
 
-    public void Start()
+    void Start()
     {
         player = GameObject.FindWithTag("Player");
         //Debug.Log("Found You!");
@@ -75,37 +76,7 @@ public class EnemyScript : MonoBehaviour
 
 
 
-        /*
-        if(!pursuing)
-        {
-                Ray ray = new Ray(eyes.transform.position, eyes.transform.forward * visionRange);
-
-                Debug.DrawRay(ray.origin, ray.direction*visionRange, Color.red);
-
-                RaycastHit hit;
-
-                if(Physics.Raycast(ray, out hit)&&hit.transform.gameObject.tag=="Player")
-                {
-
-                     Debug.Log("I see somethinng");
-                     pursuing = true;
-                     target = hit.transform.gameObject;
-
-                }
-                
-        }
-        else
-        {
-            if(target==null)
-            {
-                pursuing = false;
-            }
-            pathfinding.SetDestination(target.transform.position);
-
-
-        }
-
-        */
+       
     }
 
 
