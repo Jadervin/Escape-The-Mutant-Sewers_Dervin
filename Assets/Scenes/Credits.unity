@@ -500,7 +500,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 39
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -511,8 +511,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Tetragnatha: by Ilia\n- Creeppy frog- by DZHUSI \xD8NE\n- Rat_Boss:
-    by Tanya_Ekberg\n"
+  m_Text: "All Models were attained from Sketchfab:\n- Tetragnatha (Player Model):
+    by Ilia\n- Creeppy frog- by DZHUSI \xD8NE\n- Rat_Boss: by Tanya_Ekberg\n\nI have
+    neither given nor received unauthorized aid in completing this work,\r\nnor have
+    I presented someone else's work as my own.\n\nSignature: Jonathan Dervin"
 --- !u!222 &1282343540
 CanvasRenderer:
   m_ObjectHideFlags: 0
