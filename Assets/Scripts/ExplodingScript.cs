@@ -10,21 +10,29 @@ public class ExplodingScript : MonoBehaviour
     {
         
     
-    
-        if (other.gameObject.tag=="Damage")
+    /*
+        if (other.gameObject.tag=="Bullet")
         {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
 
 
         }
 
-
-
-
+        */
     }
 
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            //Destroy(this.gameObject);
+
+
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

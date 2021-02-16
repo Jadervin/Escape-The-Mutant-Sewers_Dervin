@@ -9,6 +9,9 @@ public class BulletScript : MonoBehaviour
     //public Health healthstat;
     public float expiryTime = 0f;
     public string YouWin;
+    public Transform explosionEffect;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,29 +45,10 @@ public class BulletScript : MonoBehaviour
             SceneManager.LoadScene(YouWin);
         }
     }
-    /*
-    private void OnTriggerEnter(Collider collide)
-    {
-        if (collide.gameObject.tag == "Player")
-        {
-
-                Player.GetComponent<Health>().currentHP = Player.GetComponent<Health>().currentHP - 1;
-
-                if (Player.GetComponent<Health>().currentHP == Player.GetComponent<Health>().NoHP)
-                {
-                    SceneManager.LoadScene(Player.GetComponent<Health>().gameover);
-
-                }
-
-                //Destroy(collision.gameObject);
-                Destroy(this.gameObject);
-                Debug.Log("DESTROYED");
-        }
-
     
-    }
+    
 
-    */
+   
 
 
 

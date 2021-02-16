@@ -31,6 +31,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   expiryTime: 15
   YouWin: You Win
+  explosionEffect: {fileID: 967901238750342681, guid: 8f304d7aef124954da6bcd1236b07fbf, type: 3}
 --- !u!1001 &4169065202145614093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105,6 +106,10 @@ PrefabInstance:
     - target: {fileID: 3022441608269677534, guid: fd9c83d927aeea74287077dc78bb3337, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022441608269677534, guid: fd9c83d927aeea74287077dc78bb3337, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd9c83d927aeea74287077dc78bb3337, type: 3}
